@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button | eventLishener</title>
+
+
+    <!-- This is a CSS  -->
+    <style>
+
+       
+      button {
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 500;
+        box-shadow: 3px 3px 5px black;
+      }
+      button:hover{
+        background-color: #727272;
+    
+      }
+
+      .cont {
+       height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 40px;
+       
+        border: 10px double  black;
+     background-image: linear-gradient(to left , gold, black);
+      }
+    </style>
+
+
+  </head>
+  
+  <body>
+    <header class="cont">
+
+      <button onclick="fun1()" id="onclick">one click</button>
+
+      <button ondblclick="fun2()" id="dblclick">double click</button>
+
+      <button onmouseover="fun3()" id="Mouseover">Mouseover</button>
+
+      <button onmouseout="fun4()" id="mouseout">mouse out</button>
+
+      <button onkeypress="fun5()" id="onkeypress">onkeypress</button>
+
+      <button onkeydown="fun6()" id="keydown">keydown-keyup</button>
+
+      <button onkeyup="fun7()" id="keyup">keydown-keyup</button>
+
+    </header>
+
+
+    <!-- JavaScript Code -->
+
+    <script>
+
+        function fun1(){
+
+            document.getElementById("onclick").innerText = "I am onclick"
+            document.getElementById("onclick").style.backgroundColor = "red"
+            document.getElementById("onclick").style.border = "10px solid white"
+         
+         
+        }
+
+
+        // This is for Double Button.
+
+        
+        function fun2(){
+
+document.getElementById("dblclick").innerText = "I am dblclick"
+document.getElementById("dblclick").style.backgroundColor = "green"
+document.getElementById("dblclick").style.border = "10px solid white"
+
+
+}
+
+// This is for Mouseover.
+function fun3(){
+
+document.getElementById("Mouseover").innerText = "I am Mouseover"
+document.getElementById("Mouseover").style.backgroundColor = ""
+document.getElementById("Mouseover").style.border = "10px solid white"
+
+
+}
+
+
+
+// This is for Mouseout.
+function fun4(){
+
+document.getElementById("mouseout").innerText = "I am mouseout"
+document.getElementById("mouseout").style.backgroundColor = "orange"
+document.getElementById("mouseout").style.border = "10px solid white"
+
+
+}
+
+
+// This is for onkeypress.
+function fun5(){
+
+document.getElementById("onkeypress").innerText = "I am onkeypress"
+document.getElementById("onkeypress").style.backgroundColor = "blue"
+document.getElementById("onkeypress").style.border = "10px solid white"
+
+
+}
+
+
+
+// This is for keydown.
+function fun6(){
+
+document.getElementById("keydown").innerText = "I am keydown"
+document.getElementById("keydown").style.backgroundColor = "pink"
+document.getElementById("keydown").style.border = "10px solid white"
+
+
+}
+
+
+// This is for keyup.
+
+function fun7(){
+
+document.getElementById("keyup").innerText = "I am keyup"
+document.getElementById("keyup").style.backgroundColor = "gray"
+document.getElementById("keyup").style.border = "10px solid white"
+
+
+}
+    </script>
+
+   
+    
+  </body>
+</html>
